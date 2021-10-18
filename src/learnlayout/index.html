@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習 CSS 版面配置</title>
+    <link href="tailwind.css" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
+    <style>
+        #logo span {
+            font-family: 'Bree Serif', serif;
+        }
+
+        .context-highlight-link a {
+            color: #D64078
+        }
+
+        .context-highlight-link a:hover {
+            text-decoration: underline;
+        }
+
+        .context-highlight-link a:active {
+            color: white;
+            background-color: black;
+        }
+
+        .context-highlight-link a {
+            color: #D64078
+        }
+
+        .context-highlight-link a:hover {
+            text-decoration: underline;
+        }
+
+        .context-highlight-link a:active {
+            color: white;
+            background-color: black;
+        }
+
+        a.mylink {
+            color: #D64078
+        }
+
+        a:hover.mylink {
+            text-decoration: underline;
+        }
+
+        a:active.mylink {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body class="m-0 pb-4 bg-gray-100">
+    <div id="logo" class="py-4 text-center bg-gray-100">
+        <a href="/" class="hover:no-underline active:bg-n cursor-pointer relative">
+            <img src="images/logo.png" class="align-middle inline-block max-w-full">
+            <span class="align-middle text-3xl ml-1 text-black">學習 CSS 版面配置(tailwind)</span>
+        </a>
+    </div>
+    <!-- transform -translate-x-24 translate-y-6 -rotate-45 -->
+    <div id="menu" class="absolute  -top-4 -left-20 w-64 pt-8 origin-top
+            bg-gray-50 text-center
+            transform -rotate-45 -translate-x-14
+        ">
+        <a href="/" class="py-1 a-blue text-gray-400 hover:bg-gray-300 block">首頁</a>
+        <a href="toc.html" class="py-1 text-gray-400 hover:bg-gray-300 block">目錄</a>
+    </div>
+    <div id="container" class="context-highlight-link p-1 mb-4 bg-white">
+        <style>
+            /* p {
+                margin: 1em 0;
+                font-size: 1em;
+            }
+
+            a {
+                color: #D64078
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: white;
+                background-color: black;
+            } */
+        </style>
+        <div id="about" class="max-w-screen-sm mx-auto mb-8">
+            <p>本站將會教你如何利用 CSS 來設計網頁版面配置(Layout)。</p>
+            <p>
+                我假設你已經了解CSS選取器 (Selector)、屬性 (Property) 和屬性值 (Value)
+                是什麼，而且你可能也知道所謂「版面配置」到底在講什麼，然而你也知道學會這些知識可能不是件容易的事。如果你想要從頭開始學習 HTML 和 CSS 的話，建議你可以看一下<a
+                    href="http://learn.shayhowe.com/html-css/">這篇教學文章</a>。
+            </p>
+            <button>btn</button>
+            <a href="http://localhost:8088/" class="mylink">link</a>
+        </div>
+    </div>
+</body>
+
+</html>
