@@ -13,32 +13,7 @@
             font-family: 'Bree Serif', serif;
         }
 
-        .context-highlight-link a {
-            color: #D64078
-        }
-
-        .context-highlight-link a:hover {
-            text-decoration: underline;
-        }
-
-        .context-highlight-link a:active {
-            color: white;
-            background-color: black;
-        }
-
-        .context-highlight-link a {
-            color: #D64078
-        }
-
-        .context-highlight-link a:hover {
-            text-decoration: underline;
-        }
-
-        .context-highlight-link a:active {
-            color: white;
-            background-color: black;
-        }
-
+        /* 在想要有樣式的 a 加上 class 的作法，可以很好的和 tailwind 一起運作 */
         a.mylink {
             color: #D64078
         }
@@ -51,7 +26,40 @@
             color: white;
             background-color: black;
         }
+
+        .bg-mycolor{
+            background-color: #D64078
+        }
     </style>
+    <!-- <style>
+        /* 原網站全域直接定義 a 的偽類(:hover, :active etc.)，但定義偽類後，tailwind 制定樣式的 class 數量就會大增
+        思考影響較小的方式，用 class 定義容器內的子元素樣式，來避免全域的污染 */
+        .context-highlight-link a {
+            color: #D64078
+        }
+
+        .context-highlight-link a:hover {
+            text-decoration: underline;
+        }
+
+        .context-highlight-link a:active {
+            color: white;
+            background-color: black;
+        }
+
+        .context-highlight-link a {
+            color: #D64078
+        }
+
+        .context-highlight-link a:hover {
+            text-decoration: underline;
+        }
+
+        .context-highlight-link a:active {
+            color: white;
+            background-color: black;
+        }
+    </style> -->
 </head>
 
 <body class="m-0 pb-4 bg-gray-100">
@@ -93,11 +101,14 @@
             <p>本站將會教你如何利用 CSS 來設計網頁版面配置(Layout)。</p>
             <p>
                 我假設你已經了解CSS選取器 (Selector)、屬性 (Property) 和屬性值 (Value)
-                是什麼，而且你可能也知道所謂「版面配置」到底在講什麼，然而你也知道學會這些知識可能不是件容易的事。如果你想要從頭開始學習 HTML 和 CSS 的話，建議你可以看一下<a
-                    href="http://learn.shayhowe.com/html-css/">這篇教學文章</a>。
+                是什麼，而且你可能也知道所謂「版面配置」到底在講什麼，然而你也知道學會這些知識可能不是件容易的事。如果你想要從頭開始學習 HTML 和 CSS 的話，建議你可以看一下
+                <a class="mylink" href="http://learn.shayhowe.com/html-css/">這篇教學文章</a>。
             </p>
-            <button>btn</button>
-            <a href="http://localhost:8088/" class="mylink">link</a>
+        </div>
+        <div class="text-center py-4">
+            <a href="no-layout.html" class="text-white bg-mycolor border-red-700
+            rounded py-1 w-40 inline-block  border-b-4 border-solid
+            ">開始學習</a>
         </div>
     </div>
 </body>
