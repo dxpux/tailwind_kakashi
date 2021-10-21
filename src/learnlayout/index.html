@@ -9,56 +9,7 @@
     <link href="tailwind.css" rel="stylesheet">
     <link href="site.css" rel="stylesheet">
     <style>
-        #logo span {
-            font-family: 'Bree Serif', serif;
-        }
 
-        /* 在想要有樣式的 a 加上 class 的作法，可以很好的和 tailwind 一起運作 */
-        a.my-link {
-            color: #D64078
-        }
-
-        a:hover.my-link {
-            text-decoration: underline;
-        }
-
-        a:active.my-link {
-            color: white;
-            background-color: black;
-        }
-
-        .my-bg-color {
-            background-color: #D64078
-        }
-    </style>
-    <style>
-        /* 原網站全域直接定義 a 的偽類(:hover, :active etc.)，但定義偽類後，tailwind 制定樣式的 class 數量就會大增
-        思考影響較小的方式，用 class 定義容器內的子元素樣式，來避免全域的污染 */
-        .my-links a {
-            color: #D64078
-        }
-
-        .my-links a:hover {
-            text-decoration: underline;
-        }
-
-        .my-links a:active {
-            color: white;
-            background-color: black;
-        }
-
-        .my-links a {
-            color: #D64078
-        }
-
-        .my-links a:hover {
-            text-decoration: underline;
-        }
-
-        .my-links a:active {
-            color: white;
-            background-color: black;
-        }
     </style>
 </head>
 
@@ -98,8 +49,8 @@
             } */
         </style>
         <div id="about" class="max-w-screen-sm mx-auto mb-8">
-            <p>本站將會教你如何利用 CSS 來設計網頁版面配置(Layout)。</p>
-            <p>
+            <p class="my-4">本站將會教你如何利用 CSS 來設計網頁版面配置(Layout)。</p>
+            <p class="my-4">
                 我假設你已經了解CSS選取器 (Selector)、屬性 (Property) 和屬性值 (Value)
                 是什麼，而且你可能也知道所謂「版面配置」到底在講什麼，然而你也知道學會這些知識可能不是件容易的事。如果你想要從頭開始學習 HTML 和 CSS 的話，建議你可以看一下
                 <a class="my-link" href="http://learn.shayhowe.com/html-css/">這篇教學文章</a>。
@@ -133,6 +84,17 @@
             <span><a href="http://ko.learnlayout.com">한국어</a></span>
             <span><a href="http://ja.learnlayout.com">日本語</a></span>
         </div>
+    </div>
+    <div id="share" class="mx-auto w-96 text-center overflow-hidden">
+        <li class="m-0 list-none float-left">
+            <iframe
+                src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Flearnlayout.com%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21"
+                scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;"
+                allowtransparency="true"></iframe>
+        </li>
+        <li class="list-none m-0 ml-3 float-left" id="license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a>
+          </li>
     </div>
 </body>
 
