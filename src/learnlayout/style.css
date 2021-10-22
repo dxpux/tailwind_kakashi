@@ -1,3 +1,9 @@
+/* style.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #logo span {
     font-family: 'Bree Serif', serif;
 }
@@ -8,16 +14,15 @@ a.my-link {
 }
 
 a:hover.my-link {
-    text-decoration: underline;
+    @apply underline;
 }
 
 a:active.my-link {
-    color: white;
-    background-color: black;
+    @apply text-white bg-black;
 }
 
 .my-bg-color {
-    background-color: #D64078
+    background-color: #D64078;
 }
 
 /* 原網站全域直接定義 a 的偽類(:hover, :active etc.)，但定義偽類後，tailwind 制定樣式的 class 數量就會大增
@@ -27,12 +32,11 @@ a:active.my-link {
 }
 
 .my-links a:hover {
-    text-decoration: underline;
+    @apply underline;
 }
 
 .my-links a:active {
-    color: white;
-    background-color: black;
+    @apply text-white bg-black;
 }
 
 .my-links a {
@@ -40,10 +44,9 @@ a:active.my-link {
 }
 
 .my-links a:hover {
-    text-decoration: underline;
+    @apply underline;
 }
 
 .my-links a:active {
-    color: white;
-    background-color: black;
+    @apply text-white bg-black;
 }
