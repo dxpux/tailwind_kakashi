@@ -9,44 +9,45 @@
 }
 
 /* 在想要有樣式的 a 加上 class 的作法，可以很好的和 tailwind 一起運作 */
-a.my-link {
+/* 用 we- 和 tailwind 的系列作區別，另外 q k 也還未被使用 */
+a.we-link {
     color: #D64078
 }
 
-a:hover.my-link {
+a:hover.we-link {
     @apply underline;
 }
 
-a:active.my-link {
+a:active.we-link {
     @apply text-white bg-black;
 }
 
-.my-bg-color {
+.we-bg-color {
     background-color: #D64078;
 }
 
 /* 原網站全域直接定義 a 的偽類(:hover, :active etc.)，但定義偽類後，tailwind 制定樣式的 class 數量就會大增
 思考影響較小的方式，用 class 定義容器內的子元素樣式，來避免全域的污染 */
-.my-links a {
+.we-links a {
     color: #D64078
 }
 
-.my-links a:hover {
+.we-links a:hover {
     @apply underline;
 }
 
-.my-links a:active {
+.we-links a:active {
     @apply text-white bg-black;
 }
 
-.my-links a {
+.we-links a {
     color: #D64078
 }
 
-.my-links a:hover {
+.we-links a:hover {
     @apply underline;
 }
 
-.my-links a:active {
+.we-links a:active {
     @apply text-white bg-black;
 }
