@@ -4,11 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 純元素而沒有偽類的預設樣式，可以很好地和 tailwind 一起運作 */
+code {
+    @apply bg-gray-200 text-xs;
+}
+
 #logo span {
     font-family: 'Bree Serif', serif;
 }
 
-/* 在想要有樣式的 a 加上 class 的作法，可以很好的和 tailwind 一起運作 */
+/* 在想要有樣式的 a 加上 class 的作法，可以很好地和 tailwind 一起運作 */
 /* 用 we- 和 tailwind 的系列作區別，另外 q k 也還未被使用 */
 a.we-link {
     color: #D64078

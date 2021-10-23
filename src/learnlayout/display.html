@@ -27,23 +27,17 @@
     </div>
     <div id="container" class="p-4 mb-4 bg-white">
         <h1 class="max-w-xl text-center mx-auto mt-2 mb-4 text-3xl">關於本站</h1>
-        <p class="my-4">
-            如果你只想把所有內容都塞進網頁裡，那麼不用設定任何版面配置當然也可以。然而，如果你使用寬螢幕或超大螢幕瀏覽網頁的話，在閱讀網頁的過程中就會有點困擾，因為每讀完一行，你的視覺焦點要從螢幕最右邊到移動到最左邊，才能開始看第二行的文字。你調整一下瀏覽器視窗大小你就知道我意思了！
-        </p>
-        <p class="my-4">
-            在解決這個問題之前，我們必須先確認大家都了解 CSS 裡面一個重要 <code>display</code> 屬性。
+        <p class="content">
+            <code>display</code> 是設計 CSS 版面配置中最重要的屬性，每個 HTML 元素都有一個預設的 display 值，不同的元素屬性會有不同的預設值。大部分元素的 display
+            屬性，預設值通常是 <code>block</code> 或 <code>inline</code> 其中一個。若該元素的 display 屬性被標示為 block 就被稱為「區塊元素」，若被標示為 inline
+            就稱為「行內元素」。
         </p>
         <div class="text-center py-4 px-0">
-            <!-- 
-                比照原頁面，左右兩個按鈕之間 margin 設較大讓間隔過寬
-                之後再分別用 relative left 和 right 把它們從原來的位置往中間靠 
-                為什麼不 margin 設剛好，而要如此反覆？
-            -->
-            <a href="index.html" class="we-nav-btn mx-6 relative left-4">上一頁</a>
-            <a href="display.html" class="we-nav-btn mx-6 relative right-4">下一頁</a>
+            <a href="no-layout.html" class="we-nav-btn mx-6 relative left-4">上一頁</a>
+            <a href="margin-auto.html" class="we-nav-btn mx-6 relative right-4">下一頁</a>
         </div>
         <footer class="text-center">
-            1 / 19
+            2 / 19
         </footer>
     </div>
     <div id="share" class="mx-auto w-96 text-center overflow-hidden">
