@@ -32,18 +32,34 @@
             屬性，預設值通常是 <code>block</code> 或 <code>inline</code> 其中一個。若該元素的 display 屬性被標示為 block 就被稱為「區塊元素」，若被標示為 inline
             就稱為「行內元素」。
         </p>
-        <h2 class="max-w-xl my-4 mx-auto text-2xl">block</h2>
+        <h2 class="max-w-xl my-4 mx-auto font-serif text-2xl">block</h2>
         <div class="text-center py-4 px-0">
             <a href="no-layout.html" class="we-nav-btn mx-6 relative left-4">上一頁</a>
             <a href="margin-auto.html" class="we-nav-btn mx-6 relative right-4">下一頁</a>
         </div>
-        <div class="relative border-4 border-green-400 ">
+        <div class="relative border-2 border-green-400 ">
             <span class="top-0 left-0 pt-0 pl-0 pr-1 pb-1 absolute bg-green-400 leading-4">&lt;div&gt;</span>
             <p class="py-0 px-4 my-4 mx-0">
-                <code>div</code> 是一個標準的區塊元素。一個區塊元素會讓其內容從新的一行開始顯示，並盡可能的撐滿容器。其他常用的區塊元素包括 <code>p</code> 、 <code>form</code> 以及一些 HTML5 新出現的元素，例如：<code>header</code> 、 <code>footer</code> 、 <code>section</code> 等等。
-             </p>
-             <span class="right-0 bottom-0 pt-1  pl-1 pr-0 pb-0 absolute bg-green-400 leading-4">&lt;/div&gt;</span>
+                <code>div</code> 是一個標準的區塊元素。一個區塊元素會讓其內容從新的一行開始顯示，並盡可能的撐滿容器。其他常用的區塊元素包括 <code>p</code> 、
+                <code>form</code> 以及一些 HTML5 新出現的元素，例如：<code>header</code> 、 <code>footer</code> 、 <code>section</code>
+                等等。
+            </p>
+            <span class="right-0 bottom-0 pt-1  pl-1 pr-0 pb-0 absolute bg-green-400 leading-4">&lt;/div&gt;</span>
         </div>
+        <div class="max-w-xl my-1 mx-auto">
+            <h2 class="font-serif text-2xl">inline</h2>
+            <p>
+                <code>span</code> 是一個標準的行內元素。一個行內元素可以在段落中
+           
+                 <span class="border-solid border-green-400 border-2 relative">
+                     <span class="label bg-green-400">&lt;span&gt;</span>
+                   像這樣
+                 <span class="endlabel label bg-green-400">&lt;/span&gt;</span></span>
+           
+               包裹一些文字片段，透過 CSS 點綴其樣式，且不會打亂段落原本的版面配置。 <code>a</code> 元素是最常見的行內元素，它可以被用作超連結之用。
+             </p>
+        </div>
+
         <footer class="text-center">
             2 / 19
         </footer>
