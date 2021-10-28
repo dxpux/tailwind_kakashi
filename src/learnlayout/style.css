@@ -61,3 +61,7 @@ a:active.we-link {
     @apply text-white we-bg-color border-red-700;
     @apply py-1 w-40 rounded border-b-4 border-solid inline-block;
 }
+
+.we-h2{
+    @apply font-serif text-2xl my-5;
+}
