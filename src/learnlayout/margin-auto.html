@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習 CSS 版面配置</title>
+    <link href="tailwind.css" rel="stylesheet">
+    <!-- <link href="site.css" rel="stylesheet"> -->
+</head>
+
+<body class="m-0 pb-4 bg-gray-100">
+    <div id="logo" class="py-4 text-center bg-gray-100">
+        <a href="/" class="hover:no-underline active:bg-n cursor-pointer relative">
+            <img src="images/logo.png" class="align-middle inline-block max-w-full">
+            <span class="align-middle text-3xl ml-1 text-black">學習 CSS 版面配置(tailwind)</span>
+        </a>
+    </div>
+    <!-- transform -translate-x-24 translate-y-6 -rotate-45 -->
+    <div id="menu" class="absolute  -top-4 -left-20 w-64 pt-8 origin-top
+            bg-gray-50 text-center
+            transform -rotate-45 -translate-x-14
+        ">
+        <a href="/" class="py-1 a-blue text-gray-400 hover:bg-gray-300 block">首頁</a>
+        <a href="toc.html" class="py-1 text-gray-400 hover:bg-gray-300 block">目錄</a>
+    </div>
+    <div id="container" class="p-4 mb-4 bg-white">
+        <h1 class="max-w-xl text-center mx-auto mt-2 mb-4 text-3xl">關於本站</h1>
+        <p class="max-w-xl my-4 mx-auto">
+            在我們在討論 CSS 寬度時，不得不提到關於 <em>Box Model</em>
+            的議題。當你設定了元素的寬度，實際顯示的元素卻能夠超出你的設定：因為元素的邊框（margin）和內距（padding）會撐開元素。看看下面的例子，我們設定了兩個樣式，這兩個樣式擁有相同寬度設定，但最後元素顯示的實際寬度卻不太一樣。
+        </p>
+        <!-- figure 是一種引用、附錄，像是插圖、代碼，不影響主文的內容 -->
+        <figure class="my-8 mx-auto max-w-xl text-base">
+            <!-- pre 用於等寬字 -->
+            <pre>
+                <code class="block p-4 rounded-lg border-2 border-solid border-gray-500 bg-gray-900 text-white">
+                    .simple {
+                        width: 500px;
+                        margin: 20px auto;
+                      }
+                      
+                      .fancy {
+                        width: 500px;
+                        margin: 20px auto;
+                        padding: 50px;
+                        border-width: 10px;
+                      }
+                </code>
+            </pre>
+        </figure>
+        <div class="text-center py-4 px-0">
+            <a href="display.html" class="we-nav-btn mx-6 relative left-4">上一頁</a>
+            <a href="max-width.html" class="we-nav-btn mx-6 relative right-4">下一頁</a>
+        </div>
+        <footer class="text-center">
+            3 / 19
+        </footer>
+    </div>
+    <div id="share" class="mx-auto w-96 text-center overflow-hidden">
+        <li class="m-0 list-none float-left">
+            <iframe
+                src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Flearnlayout.com%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21"
+                scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;"
+                allowtransparency="true"></iframe>
+        </li>
+        <li class="list-none m-0 ml-3 float-left" id="license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img
+                    alt="Creative Commons License" style="border-width:0"
+                    src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a>
+        </li>
+    </div>
+</body>
+
+</html>
